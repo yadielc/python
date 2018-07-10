@@ -1,3 +1,7 @@
+“””” This a simple function that simulates the toss of a coinself.
+     The initial number of trials is 100 but you can call this function
+     with the number of trials you desire. 
+“””
 import random as rd
 
 def simulate_coin_flips(num_trials):
