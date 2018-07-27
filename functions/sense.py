@@ -8,6 +8,7 @@ measurements = ['red', 'green']
 pHit = 0.6
 pMiss = 0.2
 
+# function that returns new distribution
 def sense(p, Z):
     q=[]
     for i in range(len(p)):
