@@ -12,8 +12,8 @@ def predict(mean1, variance1, mean2, variance2):
 
 measurements = [5., 6., 7., 9., 10.]
 motion = [1., 1., 2., 1., 1.]
-measurement_sig = 4.
-motion_sig = 2.
+measurement_sigma = 4.
+motion_sigma = 2.
 mu = 0.
 sig = 10000.
 
