@@ -1,9 +1,9 @@
 
 
-def update(mean1, var1, mean2, var2):
-    new_mean = float(var2 * mean1 + var1 * mean2) / (var1 + var2)
-    new_var = 1./(1./var1 + 1./var2)
-    return [new_mean, new_var]
+def update(mean1, variance1, mean2, variance2):
+    new_mean = float(variance2 * mean1 + variance1 * mean2) / (variance1 + variance2)
+    new_variance = 1./(1./variance1 + 1./variance2)
+    return [new_mean, new_variance]
 
 def predict(mean1, var1, mean2, var2):
     new_mean = mean1 + mean2
