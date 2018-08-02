@@ -8,7 +8,7 @@ def update(mean1, variance1, mean2, variance2):
 def predict(mean1, variance1, mean2, variance2):
     new_mean = mean1 + mean2
     new_var = variance1 + variance2
-    return [new_mean, new_var]
+    return [new_mean, new_variance]
 
 measurements = [5., 6., 7., 9., 10.]
 motion = [1., 1., 2., 1., 1.]
