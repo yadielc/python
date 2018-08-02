@@ -20,7 +20,8 @@ sig = 10000.
 for n in range(len(measurements)):
     [mu, sigma] = update(mu, sigma, measurements[n], measurement_sigma )
     print 'update: ', [mu, sigma]
-    [mu, sigma] =
+    [mu, sigma] = predict(mu, sigma, motion[n], motion_sigma)
+    print 'predict: ', [mu, sigma]
 
 
 
