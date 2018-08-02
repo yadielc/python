@@ -1,5 +1,7 @@
 '''
-Update Step in Kalman Filters
+Update and Predict Step in Kalman Filters
+This is an implementation of a one dimensional Kalman filter
+
 '''
 def update(mean1, variance1, mean2, variance2):
     new_mean = (variance2 * mean1 + variance1 * mean2)/ (var1 + var2)
