@@ -9,8 +9,8 @@ def update(mean1, variance1, mean2, variance2):
 print update(5., 7., 14., 2.)
 
 def predict(mean1, variance1, mean2, variance2):
-    new_mean =
-    new_variance =
+    new_mean = mean1 + mean2
+    new_variance = variance1 + variance2
     return [new_mean, new_variance]
 
 
