@@ -12,3 +12,6 @@ def predict(mean1, variance1, mean2, variance2):
     new_mean =
     new_variance =
     return [new_mean, new_variance]
+
+
+print predict(10., 4., 12., 4.)
