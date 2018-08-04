@@ -2,7 +2,7 @@ import numpy as np
 import car
 
 '''
-objectOrientedPractice.property
+objectOrientedPractice.py
 
 This is a review of object oriented programming in Python. It creates a car object, importing
 the information of the object from a file class called Car.
