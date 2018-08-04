@@ -5,7 +5,7 @@ import car
 objectOrientedPractice.property
 
 This is a review of object oriented programming in Python. It creates a car object, importing
-the information of the object from a file class called Car. 
+the information of the object from a file class called Car.
 
 '''
 
@@ -25,4 +25,6 @@ velocity = [0, 1] # [vy, vx] (moving to the right)
 
 
 carla = car.Car(initial_position, velocity, world)
+
+# Visualize where the car is by using matploblib
 carla.display_world()
