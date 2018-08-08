@@ -33,3 +33,20 @@ for i in range(len(m)):
         new_row.append(r_ij)
     r.append(new_row)
 r
+
+#print a matrix
+def matrix_print(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            m_ij = matrix[i][j]
+            print(m_ij, '\t', end="")
+        print('\n') # prints a new line
+    return
+
+m = [
+    [8, 7, 1, 2, 3],
+    [1, 5, 2, 9, 5],
+    [8, 2, 2, 4, 1]
+]
+
+matrix_print(m)
