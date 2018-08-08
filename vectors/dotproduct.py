@@ -10,6 +10,7 @@ def dot_prod(v1, v2):
         result += value_1 * value_2
     return result
 
+# 2 test vectors
 vector_1 = [7,2,3]
 vector_2 = [1, 10, 4]
 
