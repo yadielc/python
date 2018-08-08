@@ -1,3 +1,10 @@
+'''
+matrixpractice.py
+
+Here is some practice problems for
+matrices in Python.
+
+'''
 mv = [
     [5, 10, 2, 6, 1]
 ]
