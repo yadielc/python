@@ -2,15 +2,6 @@ import math
 from math import sqrt
 import numbers
 
-'''
-matrix.py
-
-This is a class that contains operations
-you can do with matrices, such as calculating the determinant, inverse,
-transpose, etc.
-
-'''
-
 def zeroes(height, width):
         """
         Creates a matrix of zeroes.
@@ -147,6 +138,16 @@ class Matrix(object):
         #
         # TODO - your code here
         #
+
+         # Create a matrix of zeroes
+        grid = zeroes(self.h, self.w)
+
+        # Go through each element in the matrix
+        for r in range(self.h):
+            for c in range(self.w):
+                grid[r][c] = self.g[r][c] + other.g[r][c]
+        return grid
+
 
     def __neg__(self):
         """
