@@ -2,6 +2,15 @@ import math
 from math import sqrt
 import numbers
 
+'''
+matrix.py
+
+This is a class that contains operations
+you can do with matrices, such as calculating the determinant, inverse,
+transpose, etc.
+
+'''
+
 def zeroes(height, width):
         """
         Creates a matrix of zeroes.
