@@ -5,11 +5,11 @@ import numbers
 '''
 
 matrix.py
-Author: Yadiel F. Cabrera Alvarado 
+Author: Yadiel F. Cabrera Alvarado
 
 This is a class that contains operations
 you can do with matrices, such as calculating the determinant, inverse,
-transpose, etc.
+transpose, among other operations.
 
 '''
 
