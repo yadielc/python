@@ -31,10 +31,10 @@ def identity(n):
 class Matrix(object):
 
     # Constructor
-    def __init__(self, grid):
-        self.g = grid
-        self.h = len(grid)
-        self.w = len(grid[0])
+    def __init__(self, ):
+        self.g = mat
+        self.h = len(mat)
+        self.w = len(mat[0])
 
     #
     # Primary matrix math methods
@@ -97,13 +97,13 @@ class Matrix(object):
         Returns a transposed copy of this Matrix.
         """
         # Creates a matrix of zeroes
-        grid = zeroes(self.w, self.h)
+        mat = zeroes(self.w, self.h)
 
         # Go through each element in the matrix
         for r in range(self.h):
             for c in range(self.w):
-                grid[c][r] = self.g[r][c]
-        return grid
+                mat[c][r] = self.g[r][c]
+        return mat
 
     def is_square(self):
         return self.h == self.w
@@ -148,13 +148,13 @@ class Matrix(object):
         #
 
          # Create a matrix of zeroes
-        grid = zeroes(self.h, self.w)
+        mat = zeroes(self.h, self.w)
 
         # Go through each element in the matrix
         for r in range(self.h):
             for c in range(self.w):
-                grid[r][c] = self.g[r][c] + other.g[r][c] # add the elements
-        return grid
+                mat[r][c] = self.g[r][c] + other.g[r][c] # add the elements
+        return mat
 
 
     def __neg__(self):
