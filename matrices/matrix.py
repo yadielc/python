@@ -155,7 +155,7 @@ class Matrix(object):
         # Go through each element in the matrix
         for r in range(self.h):
             for c in range(self.w):
-                grid[r][c] = self.g[r][c] + other.g[r][c]
+                grid[r][c] = self.g[r][c] + other.g[r][c] # add the elements
         return grid
 
 
@@ -171,25 +171,42 @@ class Matrix(object):
           -1.0  -2.0
           -3.0  -4.0
         """
-        #
-        # TODO - your code here
-        #
+
+        # Creates matrix of zeroes
+        mat = zeroes(self.h, self.w)
+
+        # Traverse each element in matrix
+        for r in range(self.h):
+            for c in range(self.w):
+                 mat[r][c] = self.g[r][c]*-1.0
+        return mat
 
     def __sub__(self, other):
         """
         Defines the behavior of - operator (as subtraction)
         """
-        #
-        # TODO - your code here
-        #
+          # creates a self.h x self.w matrix of zeroes
+        mat = zeroes(self.h, self.w)
+
+        # traverse each element in matrix
+        for r in range(self.h):
+            for c in range(self.w):
+                mat[r][c] = self.g[r][c]-other.g[r][c]
+        return mat
 
     def __mul__(self, other):
         """
         Defines the behavior of * operator (matrix multiplication)
         """
-        #
-        # TODO - your code here
-        #
+        # Creates a matrix of zeroes
+        # mat will have the result
+        mat = zeroes(self.h, other.w)
+
+        for x in range(self.h):
+            for y in range(other.w):
+                for z in range(other.h):
+                    mat[x][y] += self.g[x][z] * other.g[z][y]
+        return mat
 
     def __rmul__(self, other):
         """
@@ -204,7 +221,8 @@ class Matrix(object):
           0.0  2.0
         """
         if isinstance(other, numbers.Number):
-            pass
-            #
-            # TODO - your code here
-            #
+            mat = self
+            for r in range(self.h):
+                for c in range(self.w):
+                    mat[r][c] *= other
+            return mat
