@@ -82,8 +82,6 @@ class Matrix(object):
         if self.h > 2:
             raise(NotImplementedError, "inversion not implemented for matrices larger than 2x2.")
 
-        # TODO - your code here
-
         if self.w == 1:
             return Matrix(1/self.g[0][0])
         if self.w == 2:
