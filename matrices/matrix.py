@@ -7,7 +7,7 @@ import numbers
 matrix.py
 Author: Yadiel F. Cabrera Alvarado
 
-This is a class that contains operations
+This is a class that contains functions of operations
 you can do with matrices, such as calculating the determinant, inverse,
 transpose, among other operations.
 
