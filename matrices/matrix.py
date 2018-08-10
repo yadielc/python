@@ -5,7 +5,6 @@ import numbers
 '''
 
 matrix.py
-Author: Yadiel F. Cabrera Alvarado
 
 This is a class that contains functions of operations
 you can do with matrices, such as calculating the determinant, inverse,
@@ -68,7 +67,7 @@ class Matrix(object):
             raise(ValueError, "Cannot calculate the trace of a non-square matrix.")
 
         # TODO - your code here t
-        # When t = 0
+        # This is for when t = 0
         for i in range(self.w):
             t += self.g[i][i]
         return t
@@ -85,13 +84,13 @@ class Matrix(object):
         if self.w == 1:
             return Matrix(1/self.g[0][0])
         if self.w == 2:
-            invMat = zeroes(self.w, self.h)
-            invMat[0][0] = self.g[1][1] * (1/self.determinant())
-            invMat[0][1] = -self.g[0][1] * (1/self.determinant())
-            invMat[1][0] = -self.g[1][0] * (1/self.determinant())
-            invMat[1][1] = self.g[0][0] * (1/self.determinant())
+            inverse = zeroes(self.w, self.h)
+            inverse[0][0] = self.g[1][1] * (1/self.determinant())
+            inverse[0][1] = -self.g[0][1] * (1/self.determinant())
+            inverse[1][0] = -self.g[1][0] * (1/self.determinant())
+            inverse[1][1] = self.g[0][0] * (1/self.determinant())
 
-            return invMat
+            return inverse
 
     def T(self):
         """
@@ -100,7 +99,7 @@ class Matrix(object):
         # Creates a matrix of zeroes
         grid = zeroes(self.w, self.h)
 
-        # Traverse each element in matrix
+        # Go through each element in the matrix
         for r in range(self.h):
             for c in range(self.w):
                 grid[c][r] = self.g[r][c]
