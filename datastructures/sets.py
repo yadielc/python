@@ -2,7 +2,7 @@
 sets.py
 Sets Practice
 
-This is a code to practice sets in Python.
+This is a code to practice sets in Python. That includes some of the
 '''
 
 # function that returns the element that is a member of a set OR a member of another set but not
