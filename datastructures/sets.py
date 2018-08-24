@@ -19,5 +19,5 @@ def one_set_not_both(set_a, set_b):
     a_or_b = set_a.union(set_b)
     return a_or_b - a_and_b
 
-
+# tests
 assert one_set_not_both(odds, primes) == set([9,1,2])
