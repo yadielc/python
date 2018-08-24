@@ -31,7 +31,7 @@ def identity(n):
 class Matrix(object):
 
     # Constructor
-    def __init__(self, ):
+    def __init__(self, mat):
         self.g = mat
         self.h = len(mat)
         self.w = len(mat[0])
@@ -48,8 +48,6 @@ class Matrix(object):
             raise(ValueError, "Cannot calculate determinant of non-square matrix.")
         if self.h > 2:
             raise(NotImplementedError, "Calculating determinant not implemented for matrices largerer than 2x2.")
-
-        # TODO - your code here
 
          # For 1 x 1 Matrix
         if self.h == 1:
