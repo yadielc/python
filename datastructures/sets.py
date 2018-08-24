@@ -1,8 +1,8 @@
 '''
-sets.py 
+sets.py
 Sets Practice
 
-
+This is a code to practice sets in Python.
 '''
 
 # function that returns the element that is a member of a set OR a member of another set but not
